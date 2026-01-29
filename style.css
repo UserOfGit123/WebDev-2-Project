@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.app {
+    max-width: 650px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+input,
+select,
+button {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#searchInput {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.filters,
+.sorts {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.filters button,
+.sorts button {
+    margin: 0 5px;
+    background: #e0e0e0;
+}
+
+li {
+    list-style: none;
+    padding: 12px;
+    margin: 10px 0;
+    background: #f9f9f9;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+li.overdue {
+    border-left: 5px solid #d9534f;
+    background: #fdecea;
+}
+
+.task-info span {
+    margin-right: 8px;
+}
+
+.badge {
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.badge.low {
+    background: #5cb85c;
+}
+
+.badge.medium {
+    background: #f0ad4e;
+}
+
+.badge.high {
+    background: #d9534f;
+}
+
+.actions button {
+    margin-left: 5px;
+    background: #d9d9d9;
+}
+
+.clear-btn {
+    width: 100%;
+    margin-top: 10px;
+    background: #d9534f;
+    color: #ffffff;
+}

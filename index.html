@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1>Smart Task Tracker</h1>
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Enter a task" required>
+            <select id="priorityInput">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <input type="date" id="dueDateInput">
+            <button type="submit">Add Task</button>
+        </form>
+        <input type="text" id="searchInput" placeholder="Search tasks">
+        <div class="filters">
+            <button data-filter="all">All</button>
+            <button data-filter="completed">Completed</button>
+            <button data-filter="pending">Pending</button>
+        </div>
+        <div class="sorts">
+            <button data-sort="date">Sort by Due Date</button>
+            <button data-sort="priority">Sort by Priority</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
